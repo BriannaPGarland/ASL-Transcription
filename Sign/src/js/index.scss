@@ -1,0 +1,294 @@
+
+#Header {
+    margin-top:20px;
+    margin-left:20px;
+    color: white;
+}
+.setIcon{
+    height:50px;
+    
+ }
+ .Logo{
+    height:50px;
+    padding-right:815px;
+ }
+#container {
+    margin-top: 50px;
+    margin-left:125px;
+    margin-bottom:none;
+	width: 900px;
+	height: 490px;
+    border: 10px #333 solid;
+ 
+}
+#videoElement {
+	width: 900px;
+	height: 490px;
+	background-color: #666;
+}
+#tools {
+    padding-top:12px;
+    margin-left:125px;
+    margin-right:139px;
+    background-color:#515151;
+    height:35px;
+}
+#btn {
+    font-family: Poppins;
+    margin-left:395px;
+    height:70px;
+    width:130px;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: #E0C3FC;
+    border-color: white;
+    color:  #515151;
+    font-size: 1rem;
+    letter-spacing: .20rem;
+    transition: all .5s;
+}
+#transcription{
+    margin-top:50px;
+    margin-left:410px;
+    color:white;
+    letter-spacing: .15rem;
+    font-family: Poppins;
+    
+}
+#left{
+    left:10px;
+    margin-left:10px;
+    color:white;
+    font-family: Poppins;
+    display: inline;
+    font-size: 14px;
+    margin-right:10px;
+    
+}
+#right{
+    float:right;
+    color:white;
+    display: inline;
+    margin-left:5px;
+    margin-right:5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+ .copyBtn{
+    float:right;
+    display: inline;
+    margin-left:5px;
+    margin-right:5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    border-radius: 10rem;
+    transition: all .5s;
+    background-color: #ccc;
+    border-color: white;
+    color:  #515151;
+ }
+
+
+// ------------- Slider Styles --------------
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    bottom:6px;
+    left:5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width:60px;
+    height:34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #E0C3FC;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #E0C3FC;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  label{
+     position:'in-line';
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+
+  .modal-content {
+    background-color: #E0C3FC;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #515151;
+    border-radius: 0.75rem;
+  }
+
+  .close {
+    color:white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  div.setMenuHeader {
+    font-family: Poppins;
+    text-align:center;
+    font-size: 40px;
+    border-bottom: 1px solid #888; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+  }
+  div.setContent {
+    font-family: Poppins;
+  }
+  div.fontChange { 
+    float:right;
+    font-weight: bold;
+  }
+  button.plus{
+    font-size:25px;
+    margin-right:10px;
+    background-color:white;
+    border-radius: 10rem;
+    transition: all .5s;
+  }
+  button.minus{
+    font-size:25px;
+    margin-left:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:white;
+    border-radius: 10rem;
+    transition: all .5s;
+  }
+  #darkMode{
+    margin-top:35px;
+  }
+  #darkModeEnable {
+    float:right;
+    margin-right: 7px;
+
+  }
+  div#darkModeEnable.switch{
+    span.slider.round{
+      background-color: #515151;
+    }
+  }
+
+div.voiceSelect{
+  margin-top:30px;
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  border-radius: 0.5rem;
+  background-color: #515151;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float:right;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #888;}
+  
