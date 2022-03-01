@@ -5,7 +5,7 @@ export default function VideoBox() {
 	return (
 		<div>
 			<div id='container'>
-				<Webcam />
+				<Webcam id='videoElement'/>
 				<button id='btn'>Start</button>
 			</div>
 		</div>
