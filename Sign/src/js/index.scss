@@ -1,12 +1,15 @@
-
+//==========================================================NORMAL MODE===============================================================
 #Header {
     margin-top:20px;
     margin-left:20px;
     color: white;
 }
+#body{
+  background-color: #ccc;
+}
+
 .setIcon{
     height:50px;
-    
  }
  .Logo{
     height:50px;
@@ -16,33 +19,33 @@
     margin-top: 50px;
     margin-left:125px;
     margin-bottom:none;
-	width: 900px;
-	height: 490px;
-    border: 10px #333 solid;
- 
+	  width: 900px;
+	  height: 490px;
+    box-shadow: 3px 3px 40px #fc40b2;
 }
 #videoElement {
-	width: 900px;
+	width: 1200px;
 	height: 490px;
 	background-color: #666;
 }
 #tools {
     padding-top:12px;
     margin-left:125px;
-    margin-right:139px;
-    background-color:#515151;
+    margin-right:125px;
+    background-color:#E5E7EB;
     height:35px;
 }
 #btn {
     font-family: Poppins;
     margin-left:395px;
+    margin-top:490px;
     height:70px;
     width:130px;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
-    background-color: #E0C3FC;
-    border-color: white;
-    color:  #515151;
+    background-color: #101827;
+    border-color:#FC40B2;
+    color:  #E5E7EB;
     font-size: 1rem;
     letter-spacing: .20rem;
     transition: all .5s;
@@ -50,7 +53,7 @@
 #transcription{
     margin-top:50px;
     margin-left:410px;
-    color:white;
+    color:#101827;
     letter-spacing: .15rem;
     font-family: Poppins;
     
@@ -58,7 +61,7 @@
 #left{
     left:10px;
     margin-left:10px;
-    color:white;
+    color:#101827;
     font-family: Poppins;
     display: inline;
     font-size: 14px;
@@ -67,7 +70,7 @@
 }
 #right{
     float:right;
-    color:white;
+    color:#101827;
     display: inline;
     margin-left:5px;
     margin-right:5px;
@@ -83,9 +86,9 @@
     font-size: 14px;
     border-radius: 10rem;
     transition: all .5s;
-    background-color: #ccc;
-    border-color: white;
-    color:  #515151;
+    background-color: #101827;
+    border-color: #101827;
+    color:  white;
  }
 
 
@@ -115,7 +118,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #101827;
     -webkit-transition: .4s;
     transition: .4s;
     width:60px;
@@ -135,11 +138,11 @@
   }
   
   input:checked + .slider {
-    background-color: #E0C3FC;
+    background-color: #334e7e;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #E0C3FC;
+    box-shadow: 0 0 1px #334e7e;
   }
   
   input:checked + .slider:before {
@@ -176,17 +179,17 @@
   }
 
   .modal-content {
-    background-color: #E0C3FC;
+    background-color: #FFFFFF;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #101827;
     width: 80%;
-    color: #515151;
+    color: #101827;
     border-radius: 0.75rem;
   }
 
   .close {
-    color:white;
+    color:#101827;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -203,7 +206,7 @@
     font-family: Poppins;
     text-align:center;
     font-size: 40px;
-    border-bottom: 1px solid #888; 
+    border-bottom: 1px solid #101827; 
     padding-bottom: 10px; 
     margin-bottom: 20px;
   }
@@ -217,18 +220,20 @@
   button.plus{
     font-size:25px;
     margin-right:10px;
-    background-color:white;
+    background-color:#101827;
     border-radius: 10rem;
     transition: all .5s;
+    color: white;
   }
   button.minus{
     font-size:25px;
     margin-left:10px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color:white;
+    background-color:#101827;
     border-radius: 10rem;
     transition: all .5s;
+    color:white;
   }
   #darkMode{
     margin-top:35px;
@@ -240,7 +245,7 @@
   }
   div#darkModeEnable.switch{
     span.slider.round{
-      background-color: #515151;
+      background-color: #101827;
     }
   }
 
@@ -251,7 +256,7 @@ div.voiceSelect{
   /* Dropdown Button */
 .dropbtn {
   border-radius: 0.5rem;
-  background-color: #515151;
+  background-color: #101827;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -277,7 +282,7 @@ div.voiceSelect{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color:#101827;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -290,5 +295,19 @@ div.voiceSelect{
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #888;}
+.dropdown:hover .dropbtn {background-color: #2e4674;}
   
+
+canvas {
+  aspect-ratio: auto 900 / 490;
+  height:900;
+  width:490;
+  transform: rotateY(180deg);
+}
+
+video {
+  object-fit:cover;
+  height: 490px !important;
+  width: 902px !important;
+  transform: rotateY(180deg);
+}
