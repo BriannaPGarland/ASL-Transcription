@@ -5,7 +5,7 @@ function createWindow() {
     const win = new BrowserWindow({
         width:1200,
         height:850,
-        backgroundColor: "#757BC8",
+        backgroundColor: "#FFFFFF",
         icon:'./signIcon.ico',
         webPreferences: {
             nodeIntegration: false,
