@@ -13,7 +13,7 @@ export default function ToolBar(){
                 <input type="checkbox"/>
                 <span class="slider round"></span>
             </label>
-            <label id='left'> Low Light Mode</label>
+            <label id='left'> Dark Mode</label>
             <div id='right'>
                 <button class='copyBtn'>Copy Transcript</button>
             </div>
