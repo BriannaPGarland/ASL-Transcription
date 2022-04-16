@@ -22,9 +22,9 @@ export default class Header extends React.Component {
 
     render() {
         return(
-            <div id ='Header'>
-                <img class='Logo' src='./whiteLogo.png'></img>
-                <input id='setIcon' type='image' className='setIcon'src='./SettingIcon.png' onClick={this.onModalPress}></input>
+            <div  id ='Header'>
+                <img class='Logo' src='./blue.png'></img>
+                <input id='setIcon' type='image' className='setIcon'src='./blue gear.png' onClick={this.onModalPress}></input>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <span class="close" onClick={this.onSpanPress}>&times;</span>
