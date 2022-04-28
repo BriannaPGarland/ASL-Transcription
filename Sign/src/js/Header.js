@@ -18,6 +18,10 @@ export default class Header extends React.Component {
         var modal = document.getElementById("myModal");
 
         modal.style.display = "none";
+  }
+  handleClick() {
+      var click = document.getElementById("transcription");
+
     }
 
     render() {
@@ -34,7 +38,7 @@ export default class Header extends React.Component {
                         <div class='setContent'>
                             <div>Change Transcription Font Size:
                                 <div class ='fontChange'>
-                                    <button class="plus"> + </button>
+                                    <button class="plus" onClick={this.handleClick}> + </button>
                                     <>#</>
                                     <button class = 'minus'> - </button>
                                 </div>

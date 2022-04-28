@@ -6,12 +6,14 @@ import Transcription from './transcriptionText'
 
    
 export default function App(){
-    return( 
+ // this.caption = React.createRef(); //create ref
+ 
+  return ( 
         <>
             <Header/>
             <VideoBox/>
-            <ToolBar/>
-            <Transcription/>
+        <ToolBar/>
+        <Transcription/>
         </>
     )
          
